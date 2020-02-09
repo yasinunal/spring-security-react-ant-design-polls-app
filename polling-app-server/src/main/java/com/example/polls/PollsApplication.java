@@ -17,6 +17,7 @@ public class PollsApplication {
 
 	@PostConstruct
 	void init() {
+		TimeZone.setDefault(TimeZone.getTimeZone("GMT"));
 		TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
 	}
 
